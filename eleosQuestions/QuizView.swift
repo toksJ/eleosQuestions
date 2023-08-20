@@ -42,11 +42,7 @@ struct Quiz1 : View {
     
     var body: some View {
         VStack(spacing: 15){
-//
-//                        if i < of questions --> play question
-//                        if(self.i < myQuiz1.count){
-            
-            //text of the question
+
 
             Text(myQuiz1[questionNumber].text!)
                 .font(.body)
@@ -54,17 +50,14 @@ struct Quiz1 : View {
                 .autocapitalization(.allCharacters)
                 .multilineTextAlignment(.center)
             
-            //image of the question
             Image(myQuiz1[questionNumber].img!)
                 .resizable()
                 .scaledToFit()
                 
                 .padding(.horizontal)
 
-            //answer 0
                             Button(action:{
                                 self.showActionSheet = true
-//                                self.buttonAction(n: 0)
                                 didTapOption()
                             },label: {
                                 Text(myQuiz1[questionNumber].answer[0])
@@ -77,21 +70,8 @@ struct Quiz1 : View {
                                     )
                             })
                             .padding(.horizontal, 20)
-            //                .actionSheet(isPresented: $showActionSheet) {
-            //                    ActionSheet(
-            //                        title: Text("Score"),
-            //                        message: Text("Score : \(self.score) / \(myQuiz1.count)"),
-            //                        buttons: [
-            //                            .cancel { print(self.showActionSheet) }
-            //                        ]
-            //                    )
-            //                }
-            //
-            //
-            
-            //answer 1
+     
                             Button(action:{
-//                                self.buttonAction(n: 1)
                                 self.showActionSheet = true
                                 didTapOption()
                             },label: {
@@ -105,17 +85,7 @@ struct Quiz1 : View {
                                     )
                             })
                             .padding(.horizontal, 20)
-            //                .actionSheet(isPresented: $showActionSheet) {
-            //                    ActionSheet(
-            //                        title: Text("Score"),
-            //                        message: Text("Score : \(self.score) / \(myQuiz1.count)"),
-            //                        buttons: [
-            //                            .cancel { print(self.showActionSheet) }
-            //                        ]
-            //                    )
-            //                }
-            //
-            //                //answer 2
+           
             Button(action:{
                 
 //                                self.buttonAction(n: 2)
@@ -137,50 +107,7 @@ struct Quiz1 : View {
                                     )
                             })
                             .padding(.horizontal, 20)
-            //                .actionSheet(isPresented: $showActionSheet) {
-            //                    ActionSheet(
-            //                        title: Text("Score"),
-            //                        message: Text("Score : \(self.score) / \(myQuiz1.count)"),
-            //                        buttons: [
-            //                            .cancel { print(self.showActionSheet) }
-            //                        ]
-            //                    )
-            //                }
-            //
-            //                //answer 3
-            //                Button(action:{
-            //                    self.buttonAction(n: 3)
-            //                    self.showActionSheet = true
-            //                },label: {
-            //                    Text(myQuiz1[self.i].answer[3])
-            //                        .foregroundColor(.black)
-            //                        .padding()
-            //                        .frame(maxWidth: .infinity, alignment: .leading)
-            //                        .background(
-            //                            RoundedRectangle(cornerRadius: 8)
-            //                                .stroke(Color.blue,lineWidth: 2)
-            //                        )
-            //                })
-            //                .actionSheet(isPresented: $showActionSheet) {
-            //                    ActionSheet(
-            //                        title: Text("Score"),
-            //                        message: Text("Score : \(self.score) / \(myQuiz1.count)"),
-            //                        buttons: [
-            //                            .cancel { print(self.showActionSheet) }
-            //                        ]
-            //                    )
-            //                }
-            //
-            //            }
-            //
-            //
-            //
-            //
-            //        }
-            //
-            //
-            //            }
-            //        }
+                            
             
         }
     }
