@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EC58878A2A92A77400FF3A5A /* eleosQuestionsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5887892A92A77400FF3A5A /* eleosQuestionsApp.swift */; };
 		EC58878C2A92A77400FF3A5A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58878B2A92A77400FF3A5A /* ContentView.swift */; };
 		EC58878E2A92A77700FF3A5A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC58878D2A92A77700FF3A5A /* Assets.xcassets */; };
 		EC5887912A92A77700FF3A5A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC5887902A92A77700FF3A5A /* Preview Assets.xcassets */; };
+		EC5887982A92A7BB00FF3A5A /* QuizModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5887972A92A7BB00FF3A5A /* QuizModel.swift */; };
+		EC58879A2A92A7D200FF3A5A /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC5887992A92A7D200FF3A5A /* QuizView.swift */; };
+		EC58879C2A92A80300FF3A5A /* eleos_questionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58879B2A92A80300FF3A5A /* eleos_questionApp.swift */; };
+		EC58879E2A92AB7E00FF3A5A /* FinalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC58879D2A92AB7E00FF3A5A /* FinalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EC5887862A92A77400FF3A5A /* eleosQuestions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eleosQuestions.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		EC5887892A92A77400FF3A5A /* eleosQuestionsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eleosQuestionsApp.swift; sourceTree = "<group>"; };
 		EC58878B2A92A77400FF3A5A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EC58878D2A92A77700FF3A5A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC5887902A92A77700FF3A5A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EC5887972A92A7BB00FF3A5A /* QuizModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizModel.swift; sourceTree = "<group>"; };
+		EC5887992A92A7D200FF3A5A /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		EC58879B2A92A80300FF3A5A /* eleos_questionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eleos_questionApp.swift; sourceTree = "<group>"; };
+		EC58879D2A92AB7E00FF3A5A /* FinalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,11 @@
 		EC5887882A92A77400FF3A5A /* eleosQuestions */ = {
 			isa = PBXGroup;
 			children = (
-				EC5887892A92A77400FF3A5A /* eleosQuestionsApp.swift */,
 				EC58878B2A92A77400FF3A5A /* ContentView.swift */,
+				EC5887972A92A7BB00FF3A5A /* QuizModel.swift */,
+				EC5887992A92A7D200FF3A5A /* QuizView.swift */,
+				EC58879D2A92AB7E00FF3A5A /* FinalView.swift */,
+				EC58879B2A92A80300FF3A5A /* eleos_questionApp.swift */,
 				EC58878D2A92A77700FF3A5A /* Assets.xcassets */,
 				EC58878F2A92A77700FF3A5A /* Preview Content */,
 			);
@@ -138,7 +147,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC58878C2A92A77400FF3A5A /* ContentView.swift in Sources */,
-				EC58878A2A92A77400FF3A5A /* eleosQuestionsApp.swift in Sources */,
+				EC58879E2A92AB7E00FF3A5A /* FinalView.swift in Sources */,
+				EC58879A2A92A7D200FF3A5A /* QuizView.swift in Sources */,
+				EC5887982A92A7BB00FF3A5A /* QuizModel.swift in Sources */,
+				EC58879C2A92A80300FF3A5A /* eleos_questionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
