@@ -41,74 +41,78 @@ struct Quiz1 : View {
     }
     
     var body: some View {
-        VStack(spacing: 15){
-
-
-            Text(myQuiz1[questionNumber].text!)
-                .font(.body)
-                .padding(40)
-                .autocapitalization(.allCharacters)
-                .multilineTextAlignment(.center)
-            
-            Image(myQuiz1[questionNumber].img!)
-                .resizable()
-                .scaledToFit()
+        NavigationStack {
+            VStack(spacing: 15){
                 
-                .padding(.horizontal)
-
-                            Button(action:{
-                                self.showActionSheet = true
-                                didTapOption()
-                            },label: {
-                                Text(myQuiz1[questionNumber].answer[0])
-                                    .foregroundColor(.black)
-                                    .padding()
-                                    .frame(maxWidth: .infinity, alignment: .leading)
-                                    .background(
-                                        RoundedRectangle(cornerRadius: 8)
-                                            .stroke(Color.blue,lineWidth: 2)
-                                    )
-                            })
-                            .padding(.horizontal, 20)
-     
-                            Button(action:{
-                                self.showActionSheet = true
-                                didTapOption()
-                            },label: {
-                                Text(myQuiz1[questionNumber].answer[1])
-                                    .foregroundColor(.black)
-                                    .padding()
-                                    .frame(maxWidth: .infinity, alignment: .leading)
-                                    .background(
-                                        RoundedRectangle(cornerRadius: 8)
-                                            .stroke(Color.blue,lineWidth: 2)
-                                    )
-                            })
-                            .padding(.horizontal, 20)
-           
-            Button(action:{
                 
-//                                self.buttonAction(n: 2)
-                                self.showActionSheet = true
-                                didTapOption()
-                if questionNumber == (myQuiz1.count - 1) {
+                Text(myQuiz1[questionNumber].text!)
+                    .font(.body)
+                    .padding(40)
+                    .autocapitalization(.allCharacters)
+                    .multilineTextAlignment(.center)
+                
+                Image(myQuiz1[questionNumber].img!)
+                    .resizable()
+                    .scaledToFit()
+                
+                    .padding(.horizontal)
+                
+                Button(action:{
+                    self.showActionSheet = true
+                    didTapOption()
+                },label: {
+                    Text(myQuiz1[questionNumber].answer[0])
+                        .foregroundColor(.black)
+                        .padding()
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .background(
+                            RoundedRectangle(cornerRadius: 8)
+                                .stroke(Color.blue,lineWidth: 2)
+                        )
+                })
+                .padding(.horizontal, 20)
+                
+                Button(action:{
+                    self.showActionSheet = true
+                    didTapOption()
+                },label: {
+                    Text(myQuiz1[questionNumber].answer[1])
+                        .foregroundColor(.black)
+                        .padding()
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .background(
+                            RoundedRectangle(cornerRadius: 8)
+                                .stroke(Color.blue,lineWidth: 2)
+                        )
+                })
+                .padding(.horizontal, 20)
+                
+                Button(action:{
                     
+                    //                                self.buttonAction(n: 2)
+                    self.showActionSheet = true
+                    didTapOption()
                     
-
+                },label: {
+                    Text(myQuiz1[questionNumber].answer[2])
+                        .foregroundColor(.black)
+                        .padding()
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .background(
+                            RoundedRectangle(cornerRadius: 8)
+                                .stroke(Color.blue,lineWidth: 2)
+                        )
+                })
+                .padding(.horizontal, 20)
+                
+                
+            }
+            .navigationDestination(
+                isPresented: $showView) {
+                    FinalView()
+                    Text("")
+                        .hidden()
                 }
-                            },label: {
-                                Text(myQuiz1[questionNumber].answer[2])
-                                    .foregroundColor(.black)
-                                    .padding()
-                                    .frame(maxWidth: .infinity, alignment: .leading)
-                                    .background(
-                                        RoundedRectangle(cornerRadius: 8)
-                                            .stroke(Color.blue,lineWidth: 2)
-                                    )
-                            })
-                            .padding(.horizontal, 20)
-                            
-            
         }
     }
 }
