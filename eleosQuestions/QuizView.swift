@@ -23,13 +23,16 @@ struct Quiz1 : View {
     //number of question
     @State var questionNumber: Int = 0
     
+    @State var showView = false
+    
     //var for the score
     @State var score = 0
     @State private var showActionSheet = false
     
     func didTapOption() {
         if questionNumber == (myQuiz1.count - 1) {
-            //last question reached
+        
+            
             print("last question")
         } else {
             questionNumber += 1
@@ -113,10 +116,16 @@ struct Quiz1 : View {
             //                }
             //
             //                //answer 2
-                            Button(action:{
+            Button(action:{
+                
 //                                self.buttonAction(n: 2)
                                 self.showActionSheet = true
                                 didTapOption()
+                if questionNumber == (myQuiz1.count - 1) {
+                    
+                    
+
+                }
                             },label: {
                                 Text(myQuiz1[questionNumber].answer[2])
                                     .foregroundColor(.black)

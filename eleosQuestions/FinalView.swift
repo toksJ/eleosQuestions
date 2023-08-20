@@ -18,15 +18,11 @@ struct FinalView: View {
             Text("you have earned 4 drops ")
             Text("good Job !")
             
-//            Button(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/) {
-//                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/NavigationLink(destination: ContentView()) {
-//                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Label Content@*/Text("Navigate")/*@END_MENU_TOKEN@*/
-//                }
+
             }
 
         }
     }
-//}  
 
 struct FinalView_Previews: PreviewProvider {
     static var previews: some View {
